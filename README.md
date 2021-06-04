@@ -1,4 +1,4 @@
-# hello-world
+# Utilities
 This is my initial repo, for testing purposes.
 
-The plan is to add my personal projects to my GitHub account, to be expected soon.
+I will add some handy tweaks and scripts here, at least that's the plan.
