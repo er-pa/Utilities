@@ -1,0 +1,28 @@
+##Saving
+#Always expand the save-panel
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+##Trackpad
+#Tap to click for this user + login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+#Lockscreen
+#Remove the ask for password delay
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+##Finder
+#allow shutting down Finder by pressing ⌘ + Q
+defaults write com.apple.finder QuitMenuItem -bool true
+
+#Reveal hidden fildes/folders
+defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder
+
+##Screenshot
+#Change storage location of screenshots
+defaults write com.apple.screencapture location ~/Screenshots && killall SystemUIServer
+
+#Get rid of the shadows
+defaults write com.apple.screencapture disable-shadow -bool TRUE && killall SystemUIServer
