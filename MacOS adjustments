@@ -1,5 +1,5 @@
-### SAVING ###
-  # Always expand the save-panel
+### SAVE-PANEL ###
+  # Always expand
     defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 ### TRACKPAD ###
