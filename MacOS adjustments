@@ -16,14 +16,14 @@
     defaults write com.apple.finder QuitMenuItem -bool true
 
   # Reveal hidden fildes/folders
-    defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder
+    defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 
 ### SCREENSHOT ###
   # Change storage location of screenshots
     defaults write com.apple.screencapture location ~/Screenshots && killall SystemUIServer
 
   # Get rid of the shadows
-    defaults write com.apple.screencapture disable-shadow -bool TRUE && killall SystemUIServer
+    defaults write com.apple.screencapture disable-shadow -bool true && killall SystemUIServer
     
 ### KEEP AWAKE ###
   # Prevent the Mac from falling asleep for 1 hour
