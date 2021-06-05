@@ -26,3 +26,7 @@
 
   # Get rid of the shadows
     defaults write com.apple.screencapture disable-shadow -bool TRUE && killall SystemUIServer
+    
+### KEEP AWAKE ###
+  # Prevent the Mac from falling asleep for 1 hour
+    caffeinate -u -t 3600
